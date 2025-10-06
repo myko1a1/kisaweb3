@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+body{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    background-image: url(./img/wp9200630.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
+.content{
+    width: 1250px;
+    height: 1300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.fade-in{
+    opacity: 0;
+    animation: fadeIn 2s ease-in forwards;
+}
+.maintext{
+    color: indigo;
+    font-family: "Pacifico", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+.message{
+    color: black;
+    font-style: oblique;
+    font-size: 25px;
+    width: 680px;
+    height: 950px;
+    background-color: white;
+    border-radius: 20px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.message p{
+    padding-bottom: 80px;
+}
+a{
+    text-decoration: none;
+    background-color: indigo;
+    width: 250px;
+    height: 50px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    transition: 500ms;
+    font-family: "Pacifico", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+a:hover{
+    background-color: pink;
+    color: indigo;
+    transition: 500ms;
+}
